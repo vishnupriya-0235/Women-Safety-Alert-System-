@@ -2,28 +2,29 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# Women_Safety_Alert_System 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: CodeNova
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: Vishnupriya C -College of engineering Pathanapuram
+- Member 2: Anuja R - College of engineering Pathanapuram
 
 ### Project Demo Video
 [[mention your project hosted link here]
 ](https://drive.google.com/file/d/13DYfTtMZqqsq01ejRtjZn-VyIxa2pdg0/view?usp=sharing)
 
 ### Project Description
-[2-3 lines about what your project does]
+Women-Safety-Alert-System is a real-time web application that captures live GPS coordinates and utilizes an automated 30-second safety timer to bridge the gap between victims and authorities. It ensures a fail-safe escalation to a Police Dashboard if an emergency is not deactivated with a secure PIN, providing a digital lifeline when every second counts.
 
 ### The Problem statement
-[What problem are you solving?]
+Existing SOS systems often fail if the victim's phone is snatched or they are silenced, as they require continuous manual action to send help. Women-Safety-Alert-System improves this by using a "Fail-Safe Deactivation" model: once the SOS is triggered, an alert is guaranteed to reach the police unless the user enters a secure PIN to cancel it within 30 seconds. This ensures that even if a device is disabled during a struggle, the server-side timer continues the countdown to protect the victim.
 
 ### The Solution
-[How are you solving it?]
+The Solution: Fail-Safe Server-Side Escalation
+Our system replaces unreliable manual alerts with a "Presumed Danger" model. Once triggered, a 30-second countdown runs on a cloud server—not the phone—ensuring that if a device is snatched or destroyed, the alert cannot be stopped. Help is dispatched to the Police Dashboard automatically unless the victim enters a secure Private PIN to prove they are safe.
 
 ---
 
@@ -32,10 +33,19 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+Languages used: JavaScript (ES6+), HTML5, CSS3.
+
+Frameworks used: Node.js, Express.js (Backend), EJS (Templating Engine).
+
+Libraries used: * mongoose: For MongoDB object modeling.
+
+express-session: To manage persistent user states.
+
+dotenv: For securing API keys and database credentials.
+
+body-parser: To handle incoming form data.
+
+Tools used: VS Code, Git/GitHub, MongoDB Atlas (Cloud Database), Render (Cloud Hosting).
 
 **For Hardware:**
 - Main components: [List main components]
@@ -47,10 +57,13 @@
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1: One-Tap Emergency Trigger: A high-visibility SOS button that instantly captures the victim's precise GPS coordinates using the HTML5 Geolocation API, ensuring zero time is wasted during an incident.
+- 
+- Feature 2: Fail-Safe Server-Side Timer: A 30-second countdown that runs on the cloud server rather than the local device; this ensures that even if the attacker destroys the phone, the alert will still be sent once the time expires.
+- 
+- Feature 3:PIN-Protected Deactivation: A secure cancellation mechanism that requires a pre-registered private PIN to stop an alert, preventing attackers from forcing a victim to cancel the emergency signal.
+- 
+- Feature 4: Live Police Dashboard: A dedicated interface for law enforcement that displays active alerts in real-time, featuring one-click integration with Google Maps for immediate navigation to the victim's last known location.
 
 ---
 
